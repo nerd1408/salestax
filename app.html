@@ -1,0 +1,66 @@
+<center>
+    <div class ="form">
+            <h2> Sales Tax Calculator</h5>
+            <form name="orderform" id="orderform">
+            <table>
+    </div>
+      <tr><th>
+       <label>Product: </label>
+      </th>
+      <th scope="row">
+       <div align="left">
+        <label><span>$</span></label>
+        <input name="price" type="text" id="price" size="10">
+       </div>
+      </th>
+    
+      
+      <tr><th>
+       <label>Quantity</label>
+      </th>
+      <th scope="row">
+       <div align="left">
+        <label><span>#</span></label>
+        <input name="quantity" type="text" id="quantity" size="10">
+       </div>
+      </th>
+     
+      <tr><th>
+       <label>Subtotal:</label>
+      </th>
+      <th scope="row">   
+       <div align="left">
+        <label>$</label>
+        <input name="subtotal" type="text" id="subtotal" onFocus="this.form.elements[1].focus()" size="10"> &nbsp;&nbsp;
+        <input name="subBtn" onClick="subTotal();" type="button" id="subBtn" value="Subtotal">
+       </div>
+      </th>
+     </tr>
+      
+       <tr><th>
+       <label>Tax:</label>
+      </th>
+       <th scope="row">
+       <div align="left">
+        <label>$</label>
+         <input name="salestax" type="text" id="salestax" onFocus="this.form.elements[1].focus()" size="10"> &nbsp;&nbsp;               
+         <input name="taxBtn" onClick="calculateTax();" type="button" id="taxBtn" value="Tax">  
+       </div>
+      </th>
+     </tr>
+     
+      <tr><th>
+       <label>Total:</label>
+      </th>
+      <th scope="row">
+       <div align="left">
+        <label>$</label>
+        <input name="gtotal" type="text" id="gtotal" onFocus="this.form.elements[2].focus()" size="10"> &nbsp;&nbsp;
+        <input name="gtotalBtn" onClick="grandTotal();" type="button" id="gtotalBtn" value="Calculate Order">
+       </div>
+      </th>
+     </tr>
+    </table>
+    </form>      
+    </div>
+    </center>
